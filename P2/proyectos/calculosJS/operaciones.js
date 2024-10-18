@@ -1,13 +1,12 @@
 function operacion(){
-    let num1, num2, tipope, operacionStr, ope;
-
-    num1 = parseFloat(document.getElementById("num1").value);
-    num2 = parseFloat(document.getElementById("num2").value);
-    tipope = document.getElementById("tipo").value.toLowerCase();
-    operacionStr = "";
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let tipope = document.getElementById("tipo").value.toLowerCase();
+    let operacionStr = "";
+    let ope;
 
     if (isNaN(num1) || isNaN(num2)) {
-        alert("Ingrese solo numeros, por favor.");
+        document.getElementById("resultado").innerHTML = "<h2>Por favor ingresa números válidos.</h2>";
         return;
     }
 
@@ -33,9 +32,6 @@ function operacion(){
                 operacionStr = `${num1} / ${num2}`;
             }
             break;
-        default:
-            document.getElementById("resultado").innerHTML = "<h2>Operacion no valida.</h2>";
-            return;
     }
 
     document.getElementById("resultado").innerHTML = `<h2>${operacionStr} = ${ope}</h2>`;
