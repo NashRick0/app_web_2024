@@ -153,7 +153,6 @@ nav > ul > li:hover > ul li:hover a{
 }
 
 
-
 #content{
    width: 1211px;
    min-height:930px ;
@@ -164,7 +163,7 @@ nav > ul > li:hover > ul li:hover a{
    line-height: 20px;
 }
 
-.box{
+.box {
    background-color: white;
    width: 95%;
    min-height: 930px;
@@ -174,58 +173,105 @@ nav > ul > li:hover > ul li:hover a{
    margin: 0 auto;
 }
 
-.box .image{
+.box .image {
    width: 45%;
    float: left;
    margin-right: 40px;
-
 }
 
-.box .image img{
-   width: 100%
+.box .image img {
+   width: 100%;
 }
 
-.box a{
+.box a {
    color: #444;
    transition: all 300ms;
-
 }
 
-.box a:hover{
+.box a:hover {
    color: #2ba977;
 }
 
-.box form{
-   width: 80%;
+.box form {
+   width: 60%;
+   margin: 0 auto;
+   padding: 30px;
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.box form input,
-.box form label{
-   display: block;
-   padding: 5px;
-   padding-left: 0;
-   margin-bottom: 5px;
-   font-size: 1rem;
-   font-style: bold;
-   text-decoration: underline;
-   color: black;
+.box form label {
+   font-size: 1.1rem;
+   color: #444;
+   margin-bottom: 8px;
 }
 
 .box form input[type="text"],
-.box form input[type="email"],
 .box form input[type="password"],
-.box form textarea,
-.box form select
-{
-   width: 100%;
-   margin-bottom: 10px;
+.box form input[type="email"],
+.box form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
 }
 
-.box form select
-{
-   width: 100px;
+
+.box form input[type="text"]:focus,
+.box form input[type="password"]:focus,
+.box form input[type="email"]:focus,
+.box form select:focus {
+    border-color: #2ba977;
+    outline: none;
 }
+
+button{
+   padding: 12px;
+   background-color: #2ba977;
+   color: white;
+   font-size: 1rem;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.box form button {
+   padding: 12px;
+   background-color: #2ba977;
+   color: white;
+   font-size: 1rem;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.box form button:hover {
+   background-color: #248f60;
+}
+
+.box form input[type="submit"] {
+   padding: 12px;
+   background-color: #2ba977;
+   color: white;
+   font-size: 1rem;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   width: 100%; /* Para hacer que el botón de envío ocupe todo el ancho disponible */
+}
+
+.box form input[type="submit"]:hover {
+   background-color: #248f60;
+}
+
 
 .message, 
 .alert-success{
@@ -246,6 +292,15 @@ nav > ul > li:hover > ul li:hover a{
    font-size: 2rem;
 }
 
+.alert-error {
+   background-color: #f44336; /* Rojo */
+   color: white;
+   padding: 15px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   text-align: center;
+}
+
 .title{
    color: #444;
    letter-spacing: 1px;
@@ -254,6 +309,58 @@ nav > ul > li:hover > ul li:hover a{
    margin-bottom: 10px;
    margin-top: 5px;
 }
+
+/* Estilo para la tabla */
+table {
+   width: 100%;
+   border-collapse: collapse; 
+   margin-top: 20px;
+}
+
+table th, table td {
+   padding: 12px 15px; 
+   text-align: left; 
+   border-bottom: 1px solid #ddd; 
+}
+
+table th {
+   background-color: #2ba977; 
+   color: white; 
+   font-weight: bold;
+   font-size: 1rem;
+   text-transform: uppercase; 
+}
+
+table td {
+   background-color: #f9f9f9; 
+   color: #333; 
+   font-size: 0.9rem; 
+}
+
+table tr:nth-child(even) td {
+   background-color: #f2f2f2;
+}
+
+table tr:hover td {
+   background-color: #e6e6e6;
+   transition: background-color 0.3s ease; 
+}
+
+/* Estilo de las imágenes dentro de la tabla */
+table img {
+   width: 100px; 
+   height: auto; 
+   border-radius: 8px; 
+   object-fit: cover; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease; 
+}
+
+/* Efecto de escala al pasar el ratón sobre la imagen */
+table tr:hover img {
+   transform: scale(1.1); 
+}
+
 
 /* Estilos al Footer */
 
