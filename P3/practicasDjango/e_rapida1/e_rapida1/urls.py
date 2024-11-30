@@ -1,5 +1,5 @@
 """
-URL configuration for e_rapida1 project.
+URL configuration for proyectoUTDdjango project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
